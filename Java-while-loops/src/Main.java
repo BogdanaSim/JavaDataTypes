@@ -67,7 +67,12 @@ public class Main {
         System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~||~~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("9.\n");
         //9.
-        logicalOp.showModel();
+        logicalOp.fibonacci();
+
+        System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~||~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("10.\n");
+        //10.
+        logicalOp.CozaLozaWoza();
 
 
     }

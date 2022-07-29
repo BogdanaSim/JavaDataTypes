@@ -214,7 +214,7 @@ public class LogicalOp {
     public void fibonacci(){
         int a=0,b=1,c=a+b,i=2;
         StringBuilder s=new StringBuilder();
-        s.append(a).append("; ").append(b);
+        s.append(a).append("; ").append(b).append("; ");
         while(i<20){
             s.append(c).append("; ");
             a=b;
@@ -225,19 +225,36 @@ public class LogicalOp {
         System.out.println(s);
     }
 
-    public void showModel() {
-        int i=0,j;
-        while(i<7){
-            StringBuilder s=new StringBuilder();
-            j=0;
-            while(j<7-i) {
-                s.append("*");
+   public void CozaLozaWoza(){
+        int i=1,j;
+        StringBuilder s=new StringBuilder();
+        while(i<=110){
+            j=1;
+            while(j<=11 && i<=110){
+                if(i%3==0 && i%7==0 && i%5==0)
+                    s.append("CozaLozaWoza ");
+               else if(i%3==0 && i%5==0)
+                    s.append("CozaLoza ");
+                else if(i%3==0 && i%7==0)
+                    s.append("CozaWoza ");
+                else if(i%5==0 && i%7==0)
+                    s.append("WozaLoza ");
+                else if(i%3==0)
+                    s.append("Coza ");
+                else if(i%5==0)
+                    s.append("Loza ");
+                else if(i%7==0)
+                    s.append("Woza ");
+                else{
+                    s.append(i).append(" ");
+                }
                 j++;
+                i++;
             }
             s.append("\n");
-            System.out.println(s);
-            i++;
+
         }
-    }
+        System.out.println(s);
+   }
 
 }
