@@ -54,19 +54,15 @@ public class Main {
         System.out.println("7.\n");
         //7.
 
-        System.out.println("Sum from 70 to 100: "+logicalOp.sumNumbers(70));
-        System.out.println("Sum from -20 to 100: "+logicalOp.sumNumbers(-20));
-        System.out.println("Sum from 100 to 100: "+logicalOp.sumNumbers(100));
-        System.out.println("Sum from 200 to 100: "+logicalOp.sumNumbers(200));
-
-
+        logicalOp.showInterval();
         System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~||~~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("8.\n");
         //8.
-        System.out.println("Average from 22 to 100: "+logicalOp.avgNumbers(22));
-        System.out.println("Average from -120 to 100: "+logicalOp.avgNumbers(-120));
-        System.out.println("Average from 100 to 100: "+logicalOp.avgNumbers(100));
-        System.out.println("Average from 321 to 100: "+logicalOp.avgNumbers(321));
+        System.out.println("Average from 22 to 177: "+logicalOp.avgNumbers(22,177));
+        System.out.println("Average from -120 to 90: "+logicalOp.avgNumbers(-120,90));
+        System.out.println("Average from 100 to 100: "+logicalOp.avgNumbers(100,100));
+        System.out.println("Average from 70 to 70: "+logicalOp.avgNumbers(70,70));
+        System.out.println("Average from 321 to 88: "+logicalOp.avgNumbers(321,88));
 
         System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~||~~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("9.\n");

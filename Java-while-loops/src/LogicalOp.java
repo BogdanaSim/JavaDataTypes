@@ -1,3 +1,4 @@
+import java.util.Collections;
 import java.util.Objects;
 
 public class LogicalOp {
@@ -121,24 +122,25 @@ public class LogicalOp {
 
     public void displayBetweenNumbersBigger(int number1,int number2){
         StringBuilder s= new StringBuilder();
-        int i;
+        int i,c;
         if(number1<=number2){
             System.out.println("Countdown from "+number1+" to "+number2+":");
+
+        }
+
+        else {
+            System.out.println("Countdown from "+number2+" to "+number1+":");
+            c=number1;
+            number1=number2;
+            number2=c;
+
+
+        }
             i=number1;
             while(i<=number2){
                 s.append(i).append("; ");
                 i++;
             }
-        }
-
-        else {
-            System.out.println("Countdown from "+number2+" to "+number1+":");
-            i=number2;
-            while(i<=number1){
-                s.append(i).append("; ");
-                i++;
-            }
-        }
         s.append("\n");
         System.out.println(s);
     }
@@ -177,17 +179,50 @@ public class LogicalOp {
         return s;
     }
 
-    public float avgNumbers(int number){
+    public void showInterval(){
         int s=0,c=0;
-        int i=number;
-        while(i<=100){
+        int i=111;
+        float m;
+        while(i<=8899){
             s+=i;
             i++;
             c++;
         }
         if(c==0)
+            m= (float) s;
+        m=(float)s/c;
+        System.out.println("Sum of the numbers between 111 and 8899 is: "+s);
+        System.out.println("Average of the numbers between 111 and 8899 is: "+m);
+
+    }
+
+    public float avgNumbers(int number1,int number2){
+        int s=0,c=0;
+        int i=number1/7+1;
+        if(number1%7==0)
+            i=number1/7;
+        while(i*7<=number2){
+                s+=i*7;
+                c++;
+            i++;
+        }
+        if(c==0)
             return (float) s;
         return (float)s/c;
+    }
+
+    public void fibonacci(){
+        int a=0,b=1,c=a+b,i=2;
+        StringBuilder s=new StringBuilder();
+        s.append(a).append("; ").append(b);
+        while(i<20){
+            s.append(c).append("; ");
+            a=b;
+            b=c;
+            c=a+b;
+            i++;
+        }
+        System.out.println(s);
     }
 
     public void showModel() {

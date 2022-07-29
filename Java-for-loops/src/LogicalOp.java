@@ -114,18 +114,20 @@ public class LogicalOp {
 
     public void displayBetweenNumbersBigger(int number1,int number2){
         StringBuilder s= new StringBuilder();
+        int c;
         if(number1<=number2){
             System.out.println("Countdown from "+number1+" to "+number2+":");
-            for(int i=number1;i<=number2;i++){
-                s.append(i).append("; ");
-            }
+
         }
 
         else {
+            c=number1;
+            number1=number2;
+            number2=c;
             System.out.println("Countdown from "+number2+" to "+number1+":");
-            for (int i = number2; i <= number1; i++) {
-                s.append(i).append("; ");
-            }
+        }
+        for(int i=number1;i<=number2;i++){
+            s.append(i).append("; ");
         }
         s.append("\n");
         System.out.println(s);
