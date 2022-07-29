@@ -26,6 +26,7 @@ public class Main {
         logicalOp.displayBetweenNumbers(-22,79);
         logicalOp.displayBetweenNumbers(-120,-36);
         logicalOp.displayBetweenNumbers(1,1);
+
         System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~||~~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("4.\n");
         //4.

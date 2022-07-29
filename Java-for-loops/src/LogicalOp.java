@@ -164,6 +164,8 @@ public class LogicalOp {
             s+=i;
             c++;
         }
+        if(c==0)
+            return (float) s;
         return (float)s/c;
     }
 
